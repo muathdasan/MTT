@@ -1,0 +1,39 @@
+﻿
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Products</h4>
+        <div class="table-responsive">
+            <div id="myTable_wrapper" class="dataTables_wrapper no-footer">
+                <div class="dataTables_length" id="myTable_length"></div><div id="myTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="myTable"></label></div>
+                <table id="myTable" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="myTable_info">
+                    <thead>
+                        <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" style="width: 65.4px;">Number</th>
+                            <th class="sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" style="width: 75.4px;">Name</th>
+                            <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" style="width:65.4px;">Product Image</th>
+                            <!--<th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" style="width: 127.4px;">Date</th>-->
+                            <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1" style="width: 108.4px;">Price</th>
+                        </tr>
+
+
+                    </thead>
+                    <tbody>
+
+                        <tr role="row" class="odd" *ngFor="let item of products">
+                            <td>PRD-{{item.Id}}</td>
+                            <td>{{item.nameEn}}</td>
+                            <td> <img src="{{item.imageUrl}}" class="img-responsive" style="height:60px; width:60px" alt=""> </td>
+                            <td>${{item.price}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div>
+
+                    <pagination [numpages]="totalPages" [currentpage]="page" (onSelectPage)="onSelectPageGetProduct($event)" class="pagination-small"></pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

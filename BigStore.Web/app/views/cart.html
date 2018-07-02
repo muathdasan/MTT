@@ -1,0 +1,41 @@
+﻿<div class="modal fade in" id="my-cart-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block; padding-right: 0px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"  (click) ="clickOnClose()"  data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button><h4 class="modal-title" id="myModalLabel">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>My Cart
+                </h4>
+            </div>
+            <div class="modal-body">
+
+                <div *ngIf="!products.length" class="alert alert-danger" role="alert">Your cart is empty</div>
+
+                <table class="table table-hover table-responsive" id="my-cart-table">
+                
+
+                    <tbody>
+                        <tr *ngFor="let item of products" title="summary 1">
+
+                            <td class="text-center" style="width: 30px;">
+                                <img style="height:30px; width:30px" src="{{item.imageUrl}}">
+                            </td>
+                            <td>{{item.nameEn}}</td>
+                            <td title="Unit Price">${{item.price}}</td>
+                            <td title="Quantity">
+                                <input type="number" min="1" style="width: 70px;" class="my-product-quantity" value="{{item.quantity}}">
+                            </td>
+                            <td title="Total" class="my-product-total">{{TotalPrice}}</td>
+                            <td title="Remove from Cart" class="text-center" style="width: 30px;"><a (click)="clickOnProductRemove(item.Id)" class="btn btn-xs btn-danger my-product-remove">X</a></td>
+                        </tr>
+                  
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click) ="clickOnClose()" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<!--banner-->
+<div class="banner-top">
+    <div class="container">
+        <h3>Login</h3>
+        <h4><a href="index.html">Home</a><label>/</label>Login</h4>
+        <div class="clearfix"></div>
+    </div>
+
+    <!--<div class="well" *ngIf="_registrationService.getUser()">
+        Logged in as <b>{{ _registrationService.getUser() }}</b>
+        <a (click)="logout()">Log out</a>
+
+    </div>-->
+
+    <div class="alert alert-danger" role="alert" *ngIf="message">
+        {{ message }}
+
+    </div>
+
+</div>
+<!--login-->
+<div class="login">
+
+    <div class="main-agileits">
+        <div class="form-w3agile">
+            <h3>Login</h3>
+            <form action="#" method="post">
+                <div class="key">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" value="Email" #username name="UserName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'UserName';}" required="" />
+                    <div class="clearfix"></div>
+                </div>
+                <div class="key">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" #password value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="" />
+                    <div class="clearfix"></div>
+                </div>
+                <input type="submit" value="Login" (click)="login(username.value, password.value)" />
+            </form>
+        </div>
+        <div class="forg">
+            <!--<a href="#" class="forg-left">Forgot Password</a>-->
+            <a href="register.html" class="forg-right">Register</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

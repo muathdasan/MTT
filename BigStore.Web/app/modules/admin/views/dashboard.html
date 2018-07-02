@@ -1,0 +1,241 @@
+﻿<div class="container-fluid">
+    <!-- Start Page Content -->
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card p-30">
+                <div class="media">
+                    <div class="media-left meida media-middle">
+                        <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
+                    </div>
+                    <div class="media-body media-text-right">
+                        <h2>568120</h2>
+                        <p class="m-b-0">Total Revenue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-30">
+                <div class="media">
+                    <div class="media-left meida media-middle">
+                        <span><i class="fa fa-list-alt f-s-40 color-success"></i></span>
+                    </div>
+       
+                    <div class="media-body media-text-right">
+                        <h2>{{totalOfOrders}}</h2>
+                        <p class="m-b-0">Sales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-30">
+                <div class="media">
+                    <div class="media-left meida media-middle">
+                        <span><i class="fa fa-shopping-cart f-s-40 color-warning"></i></span>
+                    </div>
+                    <div class="media-body media-text-right">
+                        <h2>{{totalOfProduct}}</h2>
+                        <p class="m-b-0">Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-30">
+                <div class="media">
+                    <div class="media-left meida media-middle">
+                        <span><i class="fa fa-user f-s-40 color-danger"></i></span>
+                    </div>
+                    <div class="media-body media-text-right">
+                        <h2>{{totalOfCustomer}}</h2>
+                        <p class="m-b-0">Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-white m-l-0 m-r-0 box-shadow ">
+
+        <!-- column -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Extra Area Chart</h4>
+                    <div id="extra-area-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg height="346" version="1.1" width="629.328" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.5px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.84375" y="311" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34375,311H604.328" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="239.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34375,239.5H604.328" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="168" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34375,168H604.328" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="96.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">150</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34375,96.5H604.328" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">200</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34375,25H604.328" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="604.328" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2007</tspan></text><text x="511.20647957553626" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2006</tspan></text><text x="418.08495915107255" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2005</tspan></text><text x="324.70831127339113" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2004</tspan></text><text x="231.58679084892742" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2003</tspan></text><text x="138.4652704244637" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2002</tspan></text><text x="45.34375" y="323.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2001</tspan></text><path fill="#59dad5" stroke="none" d="M45.34375,311C68.62413010611593,307.425,115.18489031834778,311,138.4652704244637,296.7C161.74565053057964,275.25,208.3064107428115,137.6125,231.58679084892742,139.4C254.86717095504335,141.1875,301.42793116727523,289.57934336525307,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,282.4391244870041,487.92609946942036,83.98750000000001,511.20647957553626,82.20000000000002C534.4868596816522,80.41250000000002,581.0476198938841,243.075,604.328,296.7L604.328,311L45.34375,311Z" fill-opacity="0.8" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.8;"></path><path fill="none" stroke="#26dad2" d="M45.34375,311C68.62413010611593,307.425,115.18489031834778,311,138.4652704244637,296.7C161.74565053057964,275.25,208.3064107428115,137.6125,231.58679084892742,139.4C254.86717095504335,141.1875,301.42793116727523,289.57934336525307,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,282.4391244870041,487.92609946942036,83.98750000000001,511.20647957553626,82.20000000000002C534.4868596816522,80.41250000000002,581.0476198938841,243.075,604.328,296.7" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34375" cy="311" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="138.4652704244637" cy="296.7" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="231.58679084892742" cy="139.4" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="324.70831127339113" cy="311" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="418.08495915107255" cy="311" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="511.20647957553626" cy="82.20000000000002" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.328" cy="296.7" r="0" fill="#26dad2" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#f9aaba" stroke="none" d="M45.34375,311C68.62413010611593,289.55,115.18489031834778,226.98749999999998,138.4652704244637,225.2C161.74565053057964,223.4125,208.3064107428115,285.97499999999997,231.58679084892742,296.7C254.86717095504335,307.425,301.42793116727523,309.21494528043775,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,297.61208960328315,487.92609946942036,225.2,511.20647957553626,203.75C534.4868596816522,182.3,581.0476198938841,155.4875,604.328,139.4L604.328,311L45.34375,311Z" fill-opacity="0.8" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.8;"></path><path fill="none" stroke="#fc6180" d="M45.34375,311C68.62413010611593,289.55,115.18489031834778,226.98749999999998,138.4652704244637,225.2C161.74565053057964,223.4125,208.3064107428115,285.97499999999997,231.58679084892742,296.7C254.86717095504335,307.425,301.42793116727523,309.21494528043775,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,297.61208960328315,487.92609946942036,225.2,511.20647957553626,203.75C534.4868596816522,182.3,581.0476198938841,155.4875,604.328,139.4" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34375" cy="311" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="138.4652704244637" cy="225.2" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="231.58679084892742" cy="296.7" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="324.70831127339113" cy="311" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="418.08495915107255" cy="311" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="511.20647957553626" cy="203.75" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.328" cy="139.4" r="0" fill="#fc6180" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#a6e1f4" stroke="none" d="M45.34375,182.3C68.62413010611593,200.175,115.18489031834778,253.8,138.4652704244637,253.8C161.74565053057964,253.8,208.3064107428115,196.60000000000002,231.58679084892742,182.3C254.86717095504335,168,301.42793116727523,123.33450752393982,324.70831127339113,139.4C348.0524732428115,155.50950752393982,394.74079718165217,294.8904924760602,418.08495915107255,311C441.36533925718845,311,487.92609946942036,275.25,511.20647957553626,268.1C534.4868596816522,260.95000000000005,581.0476198938841,257.375,604.328,253.8L604.328,311L45.34375,311Z" fill-opacity="0.8" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.8;"></path><path fill="none" stroke="#62d1f3" d="M45.34375,182.3C68.62413010611593,200.175,115.18489031834778,253.8,138.4652704244637,253.8C161.74565053057964,253.8,208.3064107428115,196.60000000000002,231.58679084892742,182.3C254.86717095504335,168,301.42793116727523,123.33450752393982,324.70831127339113,139.4C348.0524732428115,155.50950752393982,394.74079718165217,294.8904924760602,418.08495915107255,311C441.36533925718845,311,487.92609946942036,275.25,511.20647957553626,268.1C534.4868596816522,260.95000000000005,581.0476198938841,257.375,604.328,253.8" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34375" cy="182.3" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="138.4652704244637" cy="253.8" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="231.58679084892742" cy="182.3" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="324.70831127339113" cy="139.4" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="418.08495915107255" cy="311" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="511.20647957553626" cy="268.1" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.328" cy="253.8" r="0" fill="#62d1f3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#f9d095" stroke="none" d="M45.34375,311C68.62413010611593,282.4,115.18489031834778,201.96250000000003,138.4652704244637,196.60000000000002C161.74565053057964,191.2375,208.3064107428115,253.8,231.58679084892742,268.1C254.86717095504335,282.40000000000003,301.42793116727523,311,324.70831127339113,311C348.0524732428115,289.5206566347469,394.74079718165217,107.23967168262654,418.08495915107255,96.5C441.36533925718845,85.78967168262653,487.92609946942036,209.11249999999998,511.20647957553626,225.2C534.4868596816522,241.2875,581.0476198938841,225.2,604.328,225.2L604.328,311L45.34375,311Z" fill-opacity="0.8" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.8;"></path><path fill="none" stroke="#ffb64d" d="M45.34375,311C68.62413010611593,282.4,115.18489031834778,201.96250000000003,138.4652704244637,196.60000000000002C161.74565053057964,191.2375,208.3064107428115,253.8,231.58679084892742,268.1C254.86717095504335,282.40000000000003,301.42793116727523,311,324.70831127339113,311C348.0524732428115,289.5206566347469,394.74079718165217,107.23967168262654,418.08495915107255,96.5C441.36533925718845,85.78967168262653,487.92609946942036,209.11249999999998,511.20647957553626,225.2C534.4868596816522,241.2875,581.0476198938841,225.2,604.328,225.2" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34375" cy="311" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="138.4652704244637" cy="196.60000000000002" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="231.58679084892742" cy="268.1" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="324.70831127339113" cy="311" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="418.08495915107255" cy="96.5" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="511.20647957553626" cy="225.2" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.328" cy="225.2" r="0" fill="#ffb64d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#8daff9" stroke="none" d="M45.34375,311C68.62413010611593,268.1,115.18489031834778,148.3375,138.4652704244637,139.4C161.74565053057964,130.4625,208.3064107428115,218.05,231.58679084892742,239.5C254.86717095504335,260.95,301.42793116727523,302.0747264021888,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,294.9345075239398,487.92609946942036,187.66250000000002,511.20647957553626,182.3C534.4868596816522,176.9375,581.0476198938841,246.65000000000003,604.328,268.1L604.328,311L45.34375,311Z" fill-opacity="0.8" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.8;"></path><path fill="none" stroke="#4680ff" d="M45.34375,311C68.62413010611593,268.1,115.18489031834778,148.3375,138.4652704244637,139.4C161.74565053057964,130.4625,208.3064107428115,218.05,231.58679084892742,239.5C254.86717095504335,260.95,301.42793116727523,302.0747264021888,324.70831127339113,311C348.0524732428115,311,394.74079718165217,311,418.08495915107255,311C441.36533925718845,294.9345075239398,487.92609946942036,187.66250000000002,511.20647957553626,182.3C534.4868596816522,176.9375,581.0476198938841,246.65000000000003,604.328,268.1" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34375" cy="311" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="138.4652704244637" cy="139.4" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="231.58679084892742" cy="239.5" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="324.70831127339113" cy="311" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="418.08495915107255" cy="311" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="511.20647957553626" cy="182.3" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.328" cy="268.1" r="0" fill="#4680ff" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 275.513px; top: 153px; display: none;">
+                            <div class="morris-hover-row-label">2004</div><div class="morris-hover-point" style="color: #26DAD2">
+                                iphone:
+                                0
+                            </div><div class="morris-hover-point" style="color: #fc6180">
+                                imac:
+                                0
+                            </div><div class="morris-hover-point" style="color: #62d1f3">
+                                ibook:
+                                120
+                            </div><div class="morris-hover-point" style="color: #ffb64d">
+                                samsung:
+                                0
+                            </div><div class="morris-hover-point" style="color: #4680ff">
+                                android:
+                                0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- column -->
+        <!-- column -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body browser">
+                    <p class="f-w-600">iMacs <span class="pull-right">85%</span></p>
+                    <div class="progress ">
+                        <div role="progressbar" style="width: 85%; height:8px;" class="progress-bar bg-danger wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
+                    </div>
+
+                    <p class="m-t-30 f-w-600">iBooks<span class="pull-right">90%</span></p>
+                    <div class="progress">
+                        <div role="progressbar" style="width: 90%; height:8px;" class="progress-bar bg-info wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
+                    </div>
+
+                    <p class="m-t-30 f-w-600">iPhone<span class="pull-right">65%</span></p>
+                    <div class="progress">
+                        <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-success wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
+                    </div>
+
+                    <p class="m-t-30 f-w-600">Samsung<span class="pull-right">65%</span></p>
+                    <div class="progress">
+                        <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-warning wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
+                    </div>
+
+                    <p class="m-t-30 f-w-600">android<span class="pull-right">65%</span></p>
+                    <div class="progress m-b-30">
+                        <div role="progressbar" style="width: 65%; height:8px;" class="progress-bar bg-success wow animated progress-animated"> <span class="sr-only">60% Complete</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- column -->
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-title">
+                    <h4>Recent Orders </h4>
+                </div>
+                <div class="card-body">
+                    <!--<div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Product</th>
+                                    <th>quantity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="round-img">
+                                            <a href=""><img src="images/avatar/4.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td>John Abraham</td>
+                                    <td><span>iBook</span></td>
+                                    <td><span>456 pcs</span></td>
+                                    <td><span class="badge badge-success">Done</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="round-img">
+                                            <a href=""><img src="images/avatar/2.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td>John Abraham</td>
+                                    <td><span>iPhone</span></td>
+                                    <td><span>456 pcs</span></td>
+                                    <td><span class="badge badge-success">Done</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="round-img">
+                                            <a href=""><img src="images/avatar/3.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td>John Abraham</td>
+                                    <td><span>iMac</span></td>
+                                    <td><span>456 pcs</span></td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="round-img">
+                                            <a href=""><img src="images/avatar/4.jpg" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td>John Abraham</td>
+                                    <td><span>iBook</span></td>
+                                    <td><span>456 pcs</span></td>
+                                    <td><span class="badge badge-success">Done</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>-->
+
+
+                    <div class="content-body padding-bottom-15">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                                <div id="DataTables_Table_8_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                    <div class="row">
+ 
+                                        <div class="col-sm-12">
+                                            <table class="table table-striped dataTable no-footer" role="grid" >
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th style="width: 62px;" class="sorting_asc" tabindex="0" rowspan="1" colspan="1" aria-label="Number: activate to sort column descending" aria-sort="ascending">Number</th>
+                                                        <th style="width: 78px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Customer: activate to sort column ascending">Customer</th>
+                                                        <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="TotallAmount: activate to sort column ascending">TotallAmount</th>
+                                                        <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Createdate: activate to sort column ascending">Createdate</th>
+                                                        <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Duedate: activate to sort column ascending">Duedate</th>
+                                                        <th style="width: 68px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr role="row" class="odd" *ngFor="let order of orders">
+                                                        <td class="sorting_1">ORD-{{order.Id}}</td> <!--000-->
+                                                        <td>{{order.Customer}}</td>
+                                                        <td>${{order.TotallAmount}}</td>
+                                                        <td>{{order.createdate}}</td>
+                                                        <td>{{order.Duedate}}</td>
+                                                        <td>{{getStatus(order.Status)}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End PAge Content -->
+
+</div>

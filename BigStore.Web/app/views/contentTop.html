@@ -1,0 +1,28 @@
+﻿
+<div class="content-top ">
+    <div class="container ">
+        <div class="spec ">
+            <h3>Special Offers</h3>
+            <div class="ser-t">
+                <b></b>
+                <span><i></i></span>
+                <b class="line"></b>
+            </div>
+        </div>
+        <div class="tab-head ">
+            <nav class="nav-sidebar">
+                <ul class="nav tabs ">
+                    <li *ngFor="let category of categories" [ngClass]="{'active': category.Id == selectedCatId}" (click)="selectedCategorychange(category.Id)">
+                        <span style="font-size: 1em; color: #8a8a8a;  padding: 16px 17px !important;   display: inline-block; cursor:pointer;">{{category.nameAr}}</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="tab-content tab-content-t">
+
+                <product-list   #product   ([ngModel])="products"  (onProductAdd)="addProductToCart($event)" > </product-list>
+
+            </div>
+        </div>
+
+    </div>
+</div>

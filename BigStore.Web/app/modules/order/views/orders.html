@@ -1,0 +1,49 @@
+﻿<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Orders</h4>
+     
+
+            <div class="content-body padding-bottom-15">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 table-responsive">
+                        <div id="DataTables_Table_8_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                            <div class="row">
+                                <!--<div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_8_length"><label>Show <select name="DataTables_Table_8_length" aria-controls="DataTables_Table_8" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="DataTables_Table_8_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_8"></label></div></div></div><div class="row">-->
+
+                                <div class="col-sm-12">
+                                    <table class="table table-striped dataTable no-footer" role="grid" style="width: 1019px;">
+                                        <thead>
+                                            <tr role="row">
+                                                <th style="width: 62px;" class="sorting_asc" tabindex="0" rowspan="1" colspan="1" aria-label="Number: activate to sort column descending" aria-sort="ascending">Number</th>
+                                                <th style="width: 78px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Customer: activate to sort column ascending">Customer</th>
+                                                <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="TotallAmount: activate to sort column ascending">TotallAmount</th>
+                                                <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Createdate: activate to sort column ascending">Createdate</th>
+                                                <th style="width: 124px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Duedate: activate to sort column ascending">Duedate</th>
+                                                <th style="width: 68px;" class="sorting" tabindex="0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr role="row" class="odd" *ngFor="let order of orders">
+                                                <td class="sorting_1">ORD-{{order.Id}}</td> <!--000-->
+                                                <td>{{order.Customer}}</td>
+                                                <td>${{order.TotallAmount}}</td>
+                                                <td>{{order.createdate}}</td>
+                                                <td>{{order.Duedate}}</td>
+                                                <td>{{getStatus(order.Status)}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><div class="row">
+                                <!--<div class="col-sm-5"> <div class="dataTables_info" id="DataTables_Table_8_info" role="status" aria-live="polite">Showing 1 to 10 of 500 entries</div></div>-->
+                                      <pagination [numpages]="totalPages" [currentpage]="page" (onSelectPage)="onSelectPageGetOrder($event)" class="pagination-small"></pagination>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    </div>
+</div>

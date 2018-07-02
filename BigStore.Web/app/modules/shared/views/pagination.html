@@ -1,0 +1,25 @@
+﻿<!--<div class="pagination">
+    <ul>
+        <li ng-class="{disabled: noPrevious()}"><a ng-click="selectPrevious()">Previous</a></li>
+        <li *ngFor="let page of pages"  ng-class="{active: isActive(page)}"><a ng-click="selectPage(page)">{{page}}</a></li>
+        <li ng-class="{disabled: noNext()}"><a ng-click="selectNext()">Next</a></li>
+    </ul>
+</div>-->
+
+<div id="myTable_wrapper" class="dataTables_wrapper no-footer">
+    <div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate">
+
+        <span class="paginate_button previous" ng-class="{disabled: noPrevious()}" aria-controls="myTable" data-dt-idx="0" tabindex="0" id="myTable_previous" (click)="selectPrevious()">Previous</span>
+        
+            <span *ngFor="let page of pages" ng-class="{current: isActive(page)}"><a class="paginate_button " (click)="selectPage(page)">{{page}}</a></span>
+
+            <!--<a class="paginate_button " aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a>
+            <a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">6</a>-->
+      
+        <span class="paginate_button next" ng-class="{disabled: noNext()}" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next" (click)="selectNext()">Next</span>
+    </div>
+</div>
